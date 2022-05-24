@@ -21,3 +21,25 @@ $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent);
 
 @import "~bootstrap/scss/containers"; // Add .container and .container-fluid classes
 @import "~bootstrap/scss/grid"; // Add the grid system
+
+
+.main_Card {
+    margin-top: 10rem;
+    padding: 0rem;
+}
+
+::ng-deep {
+
+    .mat-lebel{
+        font-size: 14px;
+        transform: skew(0deg, 0deg) !important;
+        -webkit-transform: skew(0eg, 0deg) !important;
+    }
+
+    .mat-form-field {
+        width: 100%;
+        transform: skew(0deg, 0deg) !important;
+        -webkit-transform: skew(0eg, 0deg) !important;
+    }
+
+}
