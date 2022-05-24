@@ -1,0 +1,23 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$my-app-primary: mat-palette($mat-indigo);
+$my-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent);
+
+@include angular-material-theme($my-app-theme);
+
+// Imports functions, variables, and mixins that are needed by other Bootstrap files
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+// Import Reboot
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/grid'; // add the grid
+@import '~bootstrap/scss/utilities'; // add css utilities
+
+@import "~bootstrap/scss/root";
+// @import "~bootstrap/scss/reset";
+
+@import "~bootstrap/scss/containers"; // Add .container and .container-fluid classes
+@import "~bootstrap/scss/grid"; // Add the grid system
